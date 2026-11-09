@@ -1,0 +1,72 @@
+
+:root {
+    --campus-primary: #0d6efd;
+    --campus-dark: #172554;
+    --campus-light: #eff6ff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    padding: 30px 0;
+}
+
+.hero-logo {
+    max-width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+.progress-bar-prep {
+    width: 65%;
+    background-color: var(--campus-primary);
+}
+
+.site-footer {
+    background-color: var(--campus-dark);
+    color: white;
+}
+
+    .site-footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        text-align: center;
+    }
+
+        .hero-section .btn {
+            width: 100%;
+        }
+
+    .hero-logo {
+        max-width: 160px;
+    }
+}
